@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: eq-data-insight-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python backend/app.py
+    plan: free
